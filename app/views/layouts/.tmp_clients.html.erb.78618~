@@ -11,9 +11,8 @@
 <body>
 
 <p style="color: green"><%= notice %></p>
-<div class="content">
-  <%= yield %>
-</div>
+
+<%= yield %>
 
 </body>
 </html>
