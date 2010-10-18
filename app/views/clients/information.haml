@@ -1,0 +1,41 @@
+.content
+  %center
+    %h2 Complete this form, please.
+  - form_for :client, :url => { :action => "processing" } do |f|
+    = f.error_messages
+    %table
+      %tr
+        %td.label
+          Name
+        %td
+          = f.text_field :name    
+      %tr
+        %td.label
+          Surname
+        %td
+          = f.text_field :surname    
+      %tr
+        %td.label
+          Date of Birth
+        %td
+          = date_select "client", "dob", :start_year => 1900, :end_year => (Time.now.year - 18).to_i
+      %tr
+        %td.label
+          Email
+        %td
+          = f.text_field :email    
+      %tr
+        %td.label
+          Residential Address
+        %td
+          = f.text_field :residential_address  
+      %tr
+        %td.label
+          Billing Address
+        %td
+          = f.text_field :billing_address
+      %tr
+        %td
+        %td
+          = f.submit 'Submit'
+          

@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    <td>Name</td>
+    <td><%= @client.name %></td>
+  </tr>
+  <tr>
+    <td>Surname</td>
+    <td><%= @client.surname %></td>
+  </tr>
+  <tr>
+    <td>DOB</td>
+    <td><%= @client.dob %></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><%= @client.email %></td>
+  </tr>
+  <tr>
+    <td>Address</td>
+    <td><%= @client.residential_address %></td>
+  </tr>
+  <tr>
+    <td>Billing Address</td>
+    <td><%= @client.billing_address %></td>
+  </tr>
+</table>
+
+<p><%= link_to 'Edit', edit_client_path(@client) %>|<%= link_to 'Back', clients_path %></p>

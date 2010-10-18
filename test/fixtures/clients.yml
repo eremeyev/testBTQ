@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  surname: MyString
+  dob: 1990-10-15
+  email: aaa@aaa.com
+  residential_address: MyString
+  billing_address: MyString
+
+two:
+  name: MyString
+  surname: MyString
+  dob: 1990-10-15
+  email: bbb@aaa.com
+  residential_address: MyString
+  billing_address: MyString
